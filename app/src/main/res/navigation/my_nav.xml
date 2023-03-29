@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/overViewFragment">
+
+    <fragment
+        android:id="@+id/overViewFragment"
+        android:name="com.example.foodrecipeapp2.ui.overview.OverViewFragment"
+        android:label="fragment_over_view"
+        tools:layout="@layout/fragment_over_view" >
+        <action
+            android:id="@+id/action_overViewFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.foodrecipeapp2.ui.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_detailFragment_to_listIngredientsFragment"
+            app:destination="@id/listIngredientsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listIngredientsFragment"
+        android:name="com.example.foodrecipeapp2.ui.listingredients.ListIngredientsFragment"
+        android:label="ListIngredientsFragment"
+        tools:layout="@layout/fragment_list_ingredients">
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+</navigation>

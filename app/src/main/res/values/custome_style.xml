@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="Circuler">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+
+    </style>
+    <style name="RoundedSquare">
+        <item name="cornerSize">30%</item>
+    </style>
+    <style name="CoutnerCut">
+        <item name="cornerSize">50dp</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+    <style name="DiamondCut">
+        <item name="cornerSize">150dp</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+    <style name="SpasificCournerCut">
+        <item name="cornerSizeTopLeft">50dp</item>
+        <item name="cornerFamilyTopLeft">cut</item>
+        <item name="cornerSizeBottomRight">50dp</item>
+        <item name="cornerFamilyBottomRight">cut</item>
+    </style>
+    <style name="SpasificCournerCutRounded">
+
+        <item name="cornerSizeBottomLeft">50dp</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+
+    </style>
+    <style name="SpacifyCourbercutandRound">
+
+    </style>
+
+
+
+
+
+
+
+<!-- This is style for card view -->
+
+
+    <style name="CustomCardViewStyle" parent="@style/Widget.MaterialComponents.CardView">
+
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_card_custom_corners</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay_card_custom_corners" parent="">
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSizeTopRight">50dp</item>
+        <item name="cornerFamilyTopLeft">rounded</item>
+
+        <item name="cornerSizeTopLeft"></item>
+
+
+
+    </style>
+</resources>
